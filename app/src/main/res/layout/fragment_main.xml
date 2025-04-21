@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher_background"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/defaultButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F59BE"
+            android:textSize="12sp"
+            android:text="Default"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/resizeButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#1F59BE"
+                android:textSize="12sp"
+                android:text="Resize"/>
+
+            <EditText
+                android:id="@+id/widthBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:hint="Ширина (dp)"/>
+
+            <EditText
+                android:id="@+id/heightBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:hint="Высота (dp)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cropButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#1F59BE"
+                android:textSize="12sp"
+                android:text="Crop"/>
+
+            <Button
+                android:id="@+id/insideButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#1F59BE"
+                android:textSize="12sp"
+                android:text="Inside"/>
+
+            <Button
+                android:id="@+id/fitButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#1F59BE"
+                android:textSize="12sp"
+                android:text="Fit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/placeholderButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#F24236"
+                android:textSize="12sp"
+                android:text="Placeholder"/>
+
+            <Button
+                android:id="@+id/callbackButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#F24236"
+                android:textSize="12sp"
+                android:text="Callback"/>
+
+            <Button
+                android:id="@+id/errorButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#F24236"
+                android:textSize="12sp"
+                android:text="Error" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rotateButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#1F59BE"
+                android:textSize="12sp"
+                android:text="Rotate"/>
+
+            <EditText
+                android:id="@+id/angleBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="12sp"
+                android:hint="Угол"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/circleButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#1F59BE"
+                android:textSize="12sp"
+                android:text="Circle"/>
+
+            <Button
+                android:id="@+id/gifButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:backgroundTint="#00BBD2"
+                android:textSize="12sp"
+                android:text="Gif"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
